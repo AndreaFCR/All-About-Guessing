@@ -25,11 +25,11 @@ function handlerClick(ev) {
   clueValue();
   console.log("esto funciona");
   if (numberValue() >= 1 && numberValue() <= 100) {
-    console.log("esto funciona bien");
-    console.log(randomNumber);
-    console.log(numberValue());
+    console.log("se ha introducido un número del 1 al 100");
+    console.log(randomNumber); //lee el random number
+    console.log(numberValue()); //lee el valor introducido
     console.log(clueValue());
-    if (numberValue() == randomNumber) {
+    if (numberValue() === randomNumber) {
       console.log("has acertado");
       console.log(clueValue());
     } else if (numberValue() > randomNumber) {
@@ -38,6 +38,8 @@ function handlerClick(ev) {
     } else if (numberValue() > randomNumber) {
       console.log("ddemasiado bajo");
       console.log(clueValue());
+    } else {
+      console.log("no está leyendo la equivalencia");
     }
   } else {
     console.log("el número debe estar entre 1 y 100");
