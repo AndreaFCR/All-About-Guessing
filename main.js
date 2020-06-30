@@ -11,7 +11,7 @@ function getRandomNumber(max) {
 
 function numberValue() {
   const numberSelectedValue = numberSelected.value;
-  return numberSelectedValue;
+  return Number(numberSelectedValue);
 }
 
 function clueValue() {
@@ -28,22 +28,18 @@ function handlerClick(ev) {
     console.log("se ha introducido un número del 1 al 100");
     console.log(randomNumber); //lee el random number
     console.log(numberValue()); //lee el valor introducido
-    console.log(clueValue());
+
     if (numberValue() === randomNumber) {
       console.log("has acertado");
-      console.log(clueValue());
     } else if (numberValue() > randomNumber) {
       console.log("demasiado alto");
-      console.log(clueValue());
     } else if (numberValue() > randomNumber) {
-      console.log("ddemasiado bajo");
-      console.log(clueValue());
+      console.log("demasiado bajo");
     } else {
       console.log("no está leyendo la equivalencia");
     }
   } else {
     console.log("el número debe estar entre 1 y 100");
-    console.log(clueValue());
   }
 }
 
