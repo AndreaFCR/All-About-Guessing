@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <main></main>
+    <main class="container">
+      <h1 class="js-title">Adivina el número</h1>
+      <form action="" class="form">
+        <label
+          >Introduce aquí tu número
+          <input type="text" class="js-introNumber" />
+        </label>
+        <button type="submit" class="js-button">Prueba</button>
+        <input
+          type="text"
+          class="js-clue"
+          value="Pista: Escribe el número y dale a Prueba"
+        />
+        <input type="text" class="js-counter" value="Número de intentos: 0" />
+      </form>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
